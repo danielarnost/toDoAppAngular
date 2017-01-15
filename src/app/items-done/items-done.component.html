@@ -1,4 +1,4 @@
-<!-- <div *ngIf = "showItemsDone > 0" class = "text-center">
+<div *ngIf = "showItemsDone > 0" class = "text-center">
   <h4 class = "text-primary">My Completed Items</h4>
   <div class = "card-group">
       <div  *ngFor = "let item of toDoService.items" class= "text-left">
@@ -15,20 +15,4 @@
         </div>
       </div>
   </div>
-</div> -->
-<div class = "card-group">
-    <div  *ngFor = "let item of toDoService.items">
-      <div *ngIf = "item.completed == false" style = "margin-right: 10px; margin-top: 15px;" >
-          <div class="card">
-            <div class="card-header">
-              <h6 class = "text-primary">Item #{{item.taskNumber}}</h6>
-            </div>
-            <div class="card-block">
-              <h4 class="card-title">{{item.title}}</h4>
-              <p class="card-text">{{item.info}}.</p>
-              <button (click)= "item.completed = true; itemsCompleted = itemsCompleted + 1" class = "btn btn-primary">Mark Done</button>
-            </div>
-          </div>
-      </div>
-    </div>
 </div>

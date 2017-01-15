@@ -6,8 +6,11 @@ import {toDoService} from '../services/to-do.service';
   styleUrls: ['./items-to-do.component.css']
 })
 export class ItemsToDoComponent implements OnInit {
+
   constructor(public toDoService: toDoService) { }
   public itemsCompleted: number;
   ngOnInit() {
+    this.itemsCompleted = 0;
   }
+
 }

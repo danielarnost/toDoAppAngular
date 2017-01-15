@@ -6,6 +6,7 @@ import {toDoService} from '../services/to-do.service';
   styleUrls: ['./create-item-form.component.css']
 })
 export class CreateItemFormComponent implements OnInit {
+
   constructor(private toDoService: toDoService) { }
   public itemTitle: string;
   public itemInfo: string;
@@ -21,8 +22,8 @@ export class CreateItemFormComponent implements OnInit {
     this.itemInfo = "";
     console.log(this.toDoService.items);
   }
-  
-    ngOnInit(){
-    }
-    
+
+  ngOnInit() {
+  }
+
 }
